@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const publicBase = process.env.GITHUB_PAGES === "1" ? "/javier-ai-data-portfolio" : "";
+
 export const metadata: Metadata = {
   title: "Javier Nemoga | AI & Data Portfolio",
   description:
@@ -9,8 +11,8 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: `${publicBase}/favicon.svg`,
+    shortcut: `${publicBase}/favicon.svg`,
   },
 };
 

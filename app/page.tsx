@@ -35,6 +35,16 @@ const projects = [
     tags: ["n8n", "APIs", "Generative AI", "Automation", "Prompting"],
     outcome: "Repeatable end-to-end workflow",
   },
+  {
+    number: "05",
+    type: "Featured Capstone · Personal Project",
+    title: "Multilingual LLM Evaluation & Quality Monitoring Platform",
+    description:
+      "Designed and developed an enterprise-style evaluation platform for comparing multilingual LLM responses across factual accuracy, relevance, safety, consistency and instruction following.",
+    tags: ["LLM Evaluation", "Python", "Prompt Engineering", "AI Quality", "Analytics"],
+    outcome: "120-prompt multilingual benchmark",
+    href: "projects/llm-evaluation/",
+  },
 ];
 
 const skillGroups = [
@@ -227,7 +237,7 @@ export default function Home() {
 
         <div className="project-list">
           {projects.map((project) => (
-            <article className="project-card" key={project.number}>
+            <article className={`project-card ${project.href ? "project-card-featured" : ""}`} key={project.number}>
               <div className="project-topline">
                 <span>{project.number}</span>
                 <span>{project.type}</span>
@@ -240,6 +250,11 @@ export default function Home() {
               <div className="project-outcome">
                 <span>Outcome</span><strong>{project.outcome}</strong>
               </div>
+              {project.href && (
+                <a className="project-link" href={project.href} aria-label={`Open case study: ${project.title}`}>
+                  Explore live case study <span aria-hidden="true">↗</span>
+                </a>
+              )}
             </article>
           ))}
         </div>

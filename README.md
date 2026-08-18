@@ -4,19 +4,26 @@ Professional portfolio for **Javier Mauricio Nemoga Franco**, Telecommunications
 
 ## Live portfolio
 
-**[View the published portfolio](https://javier-ai-data-portfolio.pilarnemoga.chatgpt.site)**
+**[View the portfolio on GitHub Pages](https://nemoga24.github.io/javier-ai-data-portfolio/)**
 
-## What the portfolio includes
+## Featured capstone project
 
-- Professional profile and value proposition
-- LLM Trainer & Evaluator experience at Revelo
-- Web Developer & Data Analyst experience at 99 Cents Only Stores
-- Quantified business and analytics results
-- Data Science, NLP, visualization, and automation projects
-- Technical skills, education, certifications, and contact information
-- Responsive design for desktop and mobile
+### Multilingual LLM Evaluation & Quality Monitoring Platform
 
-## Featured projects
+An enterprise-style personal project for evaluating anonymized candidate language models across English, Spanish, and Portuguese. The platform demonstrates:
+
+- A balanced 120-prompt synthetic benchmark
+- Five quality dimensions: accuracy, relevance, safety, consistency, and instruction following
+- Interactive comparison of three model candidates
+- Language-level performance analysis
+- Representative test-case filtering
+- A documented human-review and failure-analysis workflow
+
+**[Open the interactive case study](https://nemoga24.github.io/javier-ai-data-portfolio/projects/llm-evaluation/)**
+
+The benchmark data is synthetic and the model names are anonymized. This disclosure keeps the project technically demonstrable without presenting it as a client engagement.
+
+## Additional projects
 
 1. **Customer Segmentation with RFM & Machine Learning** — Python, Pandas, Scikit-learn, PCA, K-Means
 2. **Interactive Restaurant Analytics Dashboard** — Python, Plotly, Dash, Folium, Matplotlib
@@ -25,10 +32,11 @@ Professional portfolio for **Javier Mauricio Nemoga Franco**, Telecommunications
 
 ## Technology
 
-- Next.js / React / TypeScript
-- CSS and Tailwind CSS
-- Vinext / Vite
-- Cloudflare-compatible worker runtime
+- Next.js, React, and TypeScript
+- Responsive CSS and Tailwind CSS
+- Interactive analytics components
+- Static GitHub Pages publishing workflow
+- Vinext, Vite, and Cloudflare-compatible runtime
 
 ## Run locally
 
@@ -38,8 +46,6 @@ Requirements: Node.js 22.13 or newer.
 npm install
 npm run dev
 ```
-
-Then open the local URL shown in the terminal.
 
 ## Contact
 

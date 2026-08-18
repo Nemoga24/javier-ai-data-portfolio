@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[5457,[],"ViewportBoundary"]
-3:I[5457,[],"MetadataBoundary"]
-4:"$Sreact.suspense"
-5:I[644,[],"IconMark"]
-0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Javier Nemoga | AI & Data Portfolio"}],["$","meta","1",{"name":"description","content":"Portfolio of Javier Nemoga — LLM Trainer, Data Analyst, Telecommunications Engineer and Data Science Specialist."}],["$","meta","2",{"name":"codex-preview","content":"development"}],["$","link","3",{"rel":"shortcut icon","href":"/javier-ai-data-portfolio/favicon.svg"}],["$","link","4",{"rel":"icon","href":"/javier-ai-data-portfolio/favicon.svg"}],["$","$L5","5",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"f-5r0Pz4MBw_1K2BIklLC"}
