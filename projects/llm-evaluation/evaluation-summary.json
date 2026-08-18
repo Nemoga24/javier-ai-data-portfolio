@@ -1,0 +1,79 @@
+{
+  "project": "Multilingual LLM Evaluation & Quality Monitoring Platform",
+  "disclosure": "Synthetic benchmark with anonymized candidate models.",
+  "prompt_count": 120,
+  "evaluation_count": 360,
+  "languages": [
+    "English",
+    "Spanish",
+    "Portuguese"
+  ],
+  "tasks": [
+    "Reasoning",
+    "Factual QA",
+    "Summarization",
+    "Instruction Following"
+  ],
+  "quality_dimensions": [
+    "accuracy",
+    "relevance",
+    "safety",
+    "consistency",
+    "instruction"
+  ],
+  "models": {
+    "Model A": {
+      "quality_index": 92.7,
+      "dimensions": {
+        "accuracy": 90.7,
+        "relevance": 94.1,
+        "safety": 96.8,
+        "consistency": 89.0,
+        "instruction": 92.9
+      },
+      "pass_rate": 100.0,
+      "median_latency_seconds": 1.8
+    },
+    "Model B": {
+      "quality_index": 91.7,
+      "dimensions": {
+        "accuracy": 87.8,
+        "relevance": 91.0,
+        "safety": 97.6,
+        "consistency": 92.0,
+        "instruction": 90.0
+      },
+      "pass_rate": 100.0,
+      "median_latency_seconds": 2.4
+    },
+    "Model C": {
+      "quality_index": 87.9,
+      "dimensions": {
+        "accuracy": 83.8,
+        "relevance": 87.9,
+        "safety": 95.0,
+        "consistency": 86.0,
+        "instruction": 87.0
+      },
+      "pass_rate": 87.5,
+      "median_latency_seconds": 1.1
+    }
+  },
+  "language_performance": {
+    "English": {
+      "evaluation_count": 120,
+      "average_score": 93.2,
+      "pass_rate": 100.0
+    },
+    "Spanish": {
+      "evaluation_count": 120,
+      "average_score": 90.8,
+      "pass_rate": 99.2
+    },
+    "Portuguese": {
+      "evaluation_count": 120,
+      "average_score": 88.3,
+      "pass_rate": 88.3
+    }
+  }
+}

@@ -11,32 +11,32 @@ const models = [
     id: "model-a",
     name: "Model A",
     descriptor: "Balanced reasoning model",
-    score: 92.8,
+    score: 92.7,
     latency: "1.8 s",
-    dimensions: { Accuracy: 91, Relevance: 94, Safety: 97, Consistency: 89, Instruction: 93 },
+    dimensions: { Accuracy: 90.7, Relevance: 94.1, Safety: 96.8, Consistency: 89.0, Instruction: 92.9 },
   },
   {
     id: "model-b",
     name: "Model B",
     descriptor: "Safety-optimized model",
-    score: 91.8,
+    score: 91.7,
     latency: "2.4 s",
-    dimensions: { Accuracy: 88, Relevance: 91, Safety: 98, Consistency: 92, Instruction: 90 },
+    dimensions: { Accuracy: 87.8, Relevance: 91.0, Safety: 97.6, Consistency: 92.0, Instruction: 90.0 },
   },
   {
     id: "model-c",
     name: "Model C",
     descriptor: "Low-latency model",
-    score: 88.0,
+    score: 87.9,
     latency: "1.1 s",
-    dimensions: { Accuracy: 84, Relevance: 88, Safety: 95, Consistency: 86, Instruction: 87 },
+    dimensions: { Accuracy: 83.8, Relevance: 87.9, Safety: 95.0, Consistency: 86.0, Instruction: 87.0 },
   },
 ];
 
 const languagePerformance = [
-  { language: "English", score: 94.1, prompts: 40 },
-  { language: "Spanish", score: 91.7, prompts: 40 },
-  { language: "Portuguese", score: 89.2, prompts: 40 },
+  { language: "English", score: 93.2, prompts: 40 },
+  { language: "Spanish", score: 90.8, prompts: 40 },
+  { language: "Portuguese", score: 88.3, prompts: 40 },
 ];
 
 const testCases = [
@@ -84,7 +84,7 @@ export default function LlmEvaluationCaseStudy() {
           <div><span>Benchmark</span><strong>120</strong><small>evaluation prompts</small></div>
           <div><span>Coverage</span><strong>03</strong><small>languages</small></div>
           <div><span>Framework</span><strong>05</strong><small>quality dimensions</small></div>
-          <div><span>Best score</span><strong>92.8</strong><small>weighted quality index</small></div>
+          <div><span>Best score</span><strong>92.7</strong><small>weighted quality index</small></div>
         </aside>
       </section>
 
@@ -151,7 +151,7 @@ export default function LlmEvaluationCaseStudy() {
           </article>
 
           <article className={styles.languageCard}>
-            <div className={styles.cardTitle}><h3>Performance by language</h3><span>Pass rate</span></div>
+            <div className={styles.cardTitle}><h3>Performance by language</h3><span>Average quality</span></div>
             <div className={styles.languageChart}>
               {languagePerformance.map((item) => (
                 <div key={item.language}>

@@ -14,9 +14,9 @@ const projectEnhancements = `
 <script>
 (() => {
   const models = [
-    { name: "Model A", score: 92.8, latency: "1.8 s", values: [91, 94, 97, 89, 93] },
-    { name: "Model B", score: 91.8, latency: "2.4 s", values: [88, 91, 98, 92, 90] },
-    { name: "Model C", score: 88.0, latency: "1.1 s", values: [84, 88, 95, 86, 87] }
+    { name: "Model A", score: 92.7, latency: "1.8 s", values: [90.7, 94.1, 96.8, 89.0, 92.9] },
+    { name: "Model B", score: 91.7, latency: "2.4 s", values: [87.8, 91.0, 97.6, 92.0, 90.0] },
+    { name: "Model C", score: 87.9, latency: "1.1 s", values: [83.8, 87.9, 95.0, 86.0, 87.0] }
   ];
 
   const tabs = [...document.querySelectorAll('[role="tab"]')];
@@ -80,7 +80,7 @@ async function inlinePage(sourceRelativePath, destinationRelativePath, enhanceme
   await writeFile(destinationPath, html);
 }
 
-await rm(join(root, "github-pages"), { recursive: true, force: true });
+await rm(pagesRoot, { recursive: true, force: true });
 await mkdir(pagesRoot, { recursive: true });
 await inlinePage("index.html", "index.html");
 await inlinePage("projects/llm-evaluation/index.html", "projects/llm-evaluation/index.html", projectEnhancements);

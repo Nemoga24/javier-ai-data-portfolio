@@ -18,6 +18,7 @@ An enterprise-style personal project for evaluating anonymized candidate languag
 - Language-level performance analysis
 - Representative test-case filtering
 - A documented human-review and failure-analysis workflow
+- A reproducible Python benchmark generator and scoring pipeline
 
 **[Open the interactive case study](https://nemoga24.github.io/javier-ai-data-portfolio/projects/llm-evaluation/)**
 
